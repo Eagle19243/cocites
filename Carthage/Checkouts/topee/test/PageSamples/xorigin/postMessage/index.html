@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Single iframes</title>
+    <script src="_tabId.js"></script>
+</head>
+<body>
+    <h1>Single iframe; open on http://localhost:8000</h1>
+    <iframe src="http://localhost:8001/xorigin/postMessage/iframe.html"></iframe>
+    <p>tabId is <span id='tabId'>undefined</span></p>
+    <script>
+        topee.tabId.then(function (tabId) {
+            document.getElementById('tabId').textContent = tabId;
+        });
+    </script>
+</body>
+</html>

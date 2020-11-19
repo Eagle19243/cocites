@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="topee-iframe-resources.js"></script>
+</head>
+<body>
+<h1>Topee</h1>
+<script>
+/* for describe() + body() */
+var _tests = {};
+var _currentSuite = null;
+
+window.addEventListener('message', function (msg) {
+    if (msg.data && msg.data.type === 'iruntest') {
+        runtest(msg, function (val) {
+            msg.source.postMessage({
+                type: 'itestresponse',
+                suite: msg.data.suite,
+                test: msg.data.test,
+                value: val
+            }, msg.origin);
+        });
+    }
+});
+
+describe('jasmine setup', function () {
+    body('processes commands in iframes', function () {
+        return Promise.resolve('hello from iframe');
+    });
+});
+
+describe('background chrome.runtime.sendMessage', function () {
+    body('is able to send broadcast message to all frames in specified tab', function () {
+        return new Promise(function (resolve) {
+            chrome.runtime.onMessage.addListener(onBroadcast);
+
+            function onBroadcast(msg) {
+                if (msg.type === 'testIframeTabBroadcast') {
+                    chrome.runtime.onMessage.removeListener(onBroadcast);
+                    resolve(true);
+                }
+            }
+        });
+    });
+});
+
+describe('iframe message', function () {
+    body('is received by the background script', function () {
+        chrome.runtime.sendMessage({ type: 'responseless' });
+    });
+
+    body('is received by the iframe when broadcasted to all frames', function () {
+        return new Promise(function (resolve) {
+            chrome.runtime.onMessage.addListener(onMessage);
+            function onMessage(msg) {
+                if (msg.type === 'responseless') {
+                    chrome.runtime.onMessage.removeListener(onMessage);
+                    resolve('message received');
+                }
+            }
+        });
+    });
+
+    body('is received by the iframe when targeted to an iframe', function () {
+        return new Promise(function (resolve) {
+            chrome.runtime.onMessage.addListener(onMessage);
+            chrome.runtime.sendMessage({ type: 'responsemessage' });
+            function onMessage(msg) {
+                if (msg.type === 'messageresponse') {
+                    chrome.runtime.onMessage.removeListener(onMessage);
+                    resolve('message received');
+                }
+            }
+        });
+    });
+
+    body('receives a response from the background script', function () {
+        return new Promise(function (resolve) {
+            chrome.runtime.sendMessage({ type: 'responseful' }, resolve);
+        });        
+    });
+
+    body('response is received by the background script', function () {
+        chrome.runtime.onMessage.addListener(onMessage);
+        function onMessage(msg, sender, sendResponse) {
+            if (msg.type === 'responseful') {
+                chrome.runtime.onMessage.removeListener(onMessage);
+                setTimeout(function () {  // deferred sendResponse
+                    sendResponse('response received');
+                }, 20);
+                return true;
+            }
+        }    
+    });
+
+    body('receives only subscribed messages', async function () {
+        var listenerCallsCount = 0;
+        var resolve2;
+        var resolve3;
+        var m2called = new Promise(function (resolve) { resolve2 = resolve; });
+        var m3called = new Promise(function (resolve) { resolve3 = resolve; });
+
+        chrome.runtime.onMessage.addListener(onMessage1);
+        chrome.runtime.onMessage.addListener(onMessage2);
+        chrome.runtime.onMessage.removeListener(onMessage1);
+        chrome.runtime.onMessage.addListener(onMessage3);
+
+        chrome.runtime.sendMessage({ type: 'trigger' });
+
+        await m2called;
+        await m3called;
+
+        await new Promise(function (resolve) { setTimeout(resolve, 200); });  // wait a bit more to make sure nothing more is coming
+
+        chrome.runtime.onMessage.removeListener(onMessage2);
+        chrome.runtime.onMessage.removeListener(onMessage3);
+
+        return listenerCallsCount;
+
+        function onMessage1() {
+            listenerCallsCount += 1;
+        }
+        function onMessage2() {
+            listenerCallsCount += 10;
+            resolve2();
+        }
+        function onMessage3() {
+            listenerCallsCount += 100;
+            resolve3();
+        }
+    });
+
+    body('does not leak callback listeners', async function () {
+        var realRandom = Math.random;
+        Math.random = function () { return 0.001; }  // supress the random number generator, so that the leaked listeners manifest
+
+        var message = {
+            type: 'callbackornot'
+        };
+        var responseCount = 0;
+        var resolveMsg;
+        var msgCalled = new Promise(function (resolve) { resolveMsg = resolve; });
+
+        chrome.runtime.sendMessage(message);
+
+        chrome.runtime.sendMessage(message, onResponse);
+
+        chrome.runtime.sendMessage(message);
+
+        await msgCalled;
+
+        await new Promise(function (resolve) { setTimeout(resolve, 300); });  // wait a bit more to make sure nothing more is coming
+
+        Math.random = realRandom;
+
+        return responseCount;
+
+        function onResponse() {
+            if (!responseCount) {
+                resolveMsg();
+            }
+            ++responseCount;
+        }
+    });
+});
+
+/* background bodies of tests defined in content test.js */
+function describe(name, describeBody) {
+    _tests[name] = {};
+    _currentSuite = _tests[name];
+    describeBody();
+}
+  
+function body(whatItDoes, testBody) {
+    _currentSuite[whatItDoes] = testBody;
+}
+  
+function runtest(msg, sendResponse) {
+    var res = _tests[msg.data.suite][msg.data.test](msg);
+    if (res && typeof res.then === 'function') {
+        res.then(sendResponse);
+        return true;
+    }
+    sendResponse(res);
+    return false;
+}
+
+
+window.top.postMessage({type: 'testIframeLoaded'}, '*');
+</script>
+</body>
+</html>
+

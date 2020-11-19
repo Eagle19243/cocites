@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840EB5AD2565EC9D00ECCE85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */; };
+		840EB5AF2565EC9D00ECCE85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AE2565EC9D00ECCE85 /* ViewController.swift */; };
+		840EB5B12565EC9E00ECCE85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5B02565EC9E00ECCE85 /* Assets.xcassets */; };
+		840EB5B42565EC9E00ECCE85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5B22565EC9E00ECCE85 /* Main.storyboard */; };
+		840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5C22565ECCF00ECCE85 /* Cocoa.framework */; };
+		840EB5C62565ECCF00ECCE85 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */; };
+		840EB5CE2565ECCF00ECCE85 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5CD2565ECCF00ECCE85 /* script.js */; };
+		840EB5D02565ECCF00ECCE85 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */; };
+		840EB5D42565ECCF00ECCE85 /* CoCites Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; };
+		840EB5DB2565ED8700ECCE85 /* Topee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840EB5D22565ECCF00ECCE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840EB5A12565EC9D00ECCE85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840EB5BF2565ECCF00ECCE85;
+			remoteInfo = "CoCites Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		840EB5D82565ECCF00ECCE85 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				840EB5D42565ECCF00ECCE85 /* CoCites Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840EB5DC2565ED8700ECCE85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				840EB5DB2565ED8700ECCE85 /* Topee.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		840EB5A92565EC9D00ECCE85 /* CoCites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoCites.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840EB5AE2565EC9D00ECCE85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840EB5B02565EC9E00ECCE85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840EB5B32565EC9E00ECCE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840EB5B52565EC9E00ECCE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840EB5B62565EC9E00ECCE85 /* CoCites.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoCites.entitlements; sourceTree = "<group>"; };
+		840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoCites Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840EB5C22565ECCF00ECCE85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		840EB5CC2565ECCF00ECCE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840EB5CD2565ECCF00ECCE85 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		840EB5D12565ECCF00ECCE85 /* CoCites_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoCites_Extension.entitlements; sourceTree = "<group>"; };
+		840EB5D92565ED8700ECCE85 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Topee.framework; path = Carthage/Build/Mac/Topee.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840EB5A62565EC9D00ECCE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840EB5BD2565ECCF00ECCE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */,
+				840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840EB5A02565EC9D00ECCE85 = {
+			isa = PBXGroup;
+			children = (
+				840EB5AB2565EC9D00ECCE85 /* CoCites */,
+				840EB5C42565ECCF00ECCE85 /* CoCites Extension */,
+				840EB5C12565ECCF00ECCE85 /* Frameworks */,
+				840EB5AA2565EC9D00ECCE85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840EB5AA2565EC9D00ECCE85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5A92565EC9D00ECCE85 /* CoCites.app */,
+				840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840EB5AB2565EC9D00ECCE85 /* CoCites */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */,
+				840EB5AE2565EC9D00ECCE85 /* ViewController.swift */,
+				840EB5B02565EC9E00ECCE85 /* Assets.xcassets */,
+				840EB5B22565EC9E00ECCE85 /* Main.storyboard */,
+				840EB5B52565EC9E00ECCE85 /* Info.plist */,
+				840EB5B62565EC9E00ECCE85 /* CoCites.entitlements */,
+			);
+			path = CoCites;
+			sourceTree = "<group>";
+		};
+		840EB5C12565ECCF00ECCE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5D92565ED8700ECCE85 /* Topee.framework */,
+				840EB5C22565ECCF00ECCE85 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840EB5C42565ECCF00ECCE85 /* CoCites Extension */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */,
+				840EB5CC2565ECCF00ECCE85 /* Info.plist */,
+				840EB5CD2565ECCF00ECCE85 /* script.js */,
+				840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */,
+				840EB5D12565ECCF00ECCE85 /* CoCites_Extension.entitlements */,
+			);
+			path = "CoCites Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840EB5A82565EC9D00ECCE85 /* CoCites */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840EB5B92565EC9E00ECCE85 /* Build configuration list for PBXNativeTarget "CoCites" */;
+			buildPhases = (
+				840EB5A52565EC9D00ECCE85 /* Sources */,
+				840EB5A62565EC9D00ECCE85 /* Frameworks */,
+				840EB5A72565EC9D00ECCE85 /* Resources */,
+				840EB5D82565ECCF00ECCE85 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840EB5D32565ECCF00ECCE85 /* PBXTargetDependency */,
+			);
+			name = CoCites;
+			productName = CoCites;
+			productReference = 840EB5A92565EC9D00ECCE85 /* CoCites.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840EB5BF2565ECCF00ECCE85 /* CoCites Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840EB5D52565ECCF00ECCE85 /* Build configuration list for PBXNativeTarget "CoCites Extension" */;
+			buildPhases = (
+				840EB5BC2565ECCF00ECCE85 /* Sources */,
+				840EB5BD2565ECCF00ECCE85 /* Frameworks */,
+				840EB5BE2565ECCF00ECCE85 /* Resources */,
+				840EB5DC2565ED8700ECCE85 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoCites Extension";
+			productName = "CoCites Extension";
+			productReference = 840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840EB5A12565EC9D00ECCE85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					840EB5A82565EC9D00ECCE85 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					840EB5BF2565ECCF00ECCE85 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 840EB5A42565EC9D00ECCE85 /* Build configuration list for PBXProject "CoCites" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840EB5A02565EC9D00ECCE85;
+			productRefGroup = 840EB5AA2565EC9D00ECCE85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840EB5A82565EC9D00ECCE85 /* CoCites */,
+				840EB5BF2565ECCF00ECCE85 /* CoCites Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840EB5A72565EC9D00ECCE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EB5B12565EC9E00ECCE85 /* Assets.xcassets in Resources */,
+				840EB5B42565EC9E00ECCE85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840EB5BE2565ECCF00ECCE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EB5D02565ECCF00ECCE85 /* ToolbarItemIcon.pdf in Resources */,
+				840EB5CE2565ECCF00ECCE85 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840EB5A52565EC9D00ECCE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EB5AF2565EC9D00ECCE85 /* ViewController.swift in Sources */,
+				840EB5AD2565EC9D00ECCE85 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840EB5BC2565ECCF00ECCE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EB5C62565ECCF00ECCE85 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840EB5D32565ECCF00ECCE85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840EB5BF2565ECCF00ECCE85 /* CoCites Extension */;
+			targetProxy = 840EB5D22565ECCF00ECCE85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840EB5B22565EC9E00ECCE85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840EB5B32565EC9E00ECCE85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840EB5B72565EC9E00ECCE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		840EB5B82565EC9E00ECCE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		840EB5BA2565EC9E00ECCE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5B9DGTXRVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CoCites/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCites;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		840EB5BB2565EC9E00ECCE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5B9DGTXRVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CoCites/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCites;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		840EB5D62565ECCF00ECCE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoCites Extension/CoCites_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B9DGTXRVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "CoCites Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCites.CoCites-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		840EB5D72565ECCF00ECCE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoCites Extension/CoCites_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5B9DGTXRVS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "CoCites Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCites.CoCites-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840EB5A42565EC9D00ECCE85 /* Build configuration list for PBXProject "CoCites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840EB5B72565EC9E00ECCE85 /* Debug */,
+				840EB5B82565EC9E00ECCE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840EB5B92565EC9E00ECCE85 /* Build configuration list for PBXNativeTarget "CoCites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840EB5BA2565EC9E00ECCE85 /* Debug */,
+				840EB5BB2565EC9E00ECCE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840EB5D52565ECCF00ECCE85 /* Build configuration list for PBXNativeTarget "CoCites Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840EB5D62565ECCF00ECCE85 /* Debug */,
+				840EB5D72565ECCF00ECCE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840EB5A12565EC9D00ECCE85 /* Project object */;
+}

@@ -1,0 +1,26 @@
+# Xcode
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+# Carthage
+Carthage/
+
+# OSX
+.DS_Store
+
+# Build
+src/Framework/Build/
+build/
+
+# JavaScript
+node_modules
+
+documentation/chrome-api-utils/node_modules/
+documentation/chrome-api-utils/chromium/
+
+tools/test_compat/dist/
+tools/test_compat/tmp/

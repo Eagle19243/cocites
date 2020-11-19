@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		806E5C6221306E4300C369EB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E5C6121306E4300C369EB /* TestHelper.swift */; };
+		80BEB8AA2111B68600DA4C7B /* topee-background.js in Resources */ = {isa = PBXBuildFile; fileRef = 80BEB8A92111B68600DA4C7B /* topee-background.js */; };
+		EF26BBD92192DDA800C17448 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26BBD82192DDA800C17448 /* Bundle.swift */; };
+		EF2B6DF1216F8CAA003B4D7E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DE6216F8CAA003B4D7E /* Message.swift */; };
+		EF2B6DF2216F8CAA003B4D7E /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DE8216F8CAA003B4D7E /* WKWebView.swift */; };
+		EF2B6DF3216F8CAA003B4D7E /* WKUserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DE9216F8CAA003B4D7E /* WKUserScript.swift */; };
+		EF2B6DF4216F8CAA003B4D7E /* SFSafariApplicationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DEA216F8CAA003B4D7E /* SFSafariApplicationHelper.swift */; };
+		EF2B6DF5216F8CAA003B4D7E /* PageRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DEB216F8CAA003B4D7E /* PageRegistry.swift */; };
+		EF2B6DF6216F8CAA003B4D7E /* TopeeExtensionManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DED216F8CAA003B4D7E /* TopeeExtensionManifest.swift */; };
+		EF2B6DF7216F8CAA003B4D7E /* SafariExtensionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DEE216F8CAA003B4D7E /* SafariExtensionBridge.swift */; };
+		EF2B6DF8216F8CAA003B4D7E /* TopeeSafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DEF216F8CAA003B4D7E /* TopeeSafariExtensionHandler.swift */; };
+		EF2B6DFA216F911D003B4D7E /* TopeeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B6DF9216F911D003B4D7E /* TopeeLogger.swift */; };
+		EF40FAC12170DBE10083F822 /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40FAC02170DBE10083F822 /* DefaultLogger.swift */; };
+		EF40FAC32170DDA80083F822 /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40FAC22170DDA80083F822 /* MessageHandler.swift */; };
+		EF80A765210F2B68002C6F3F /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF80A75B210F2B67002C6F3F /* Topee.framework */; };
+		EF80A76A210F2B68002C6F3F /* PageRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80A769210F2B68002C6F3F /* PageRegistryTests.swift */; };
+		EF80A76C210F2B68002C6F3F /* Topee.h in Headers */ = {isa = PBXBuildFile; fileRef = EF80A75E210F2B67002C6F3F /* Topee.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFC86ECD21131A0B0049CD8B /* topee-background-end.js in Resources */ = {isa = PBXBuildFile; fileRef = EFC86ECC21131A0B0049CD8B /* topee-background-end.js */; };
+		EFC86ECF21133BB40049CD8B /* topee-content.js in Resources */ = {isa = PBXBuildFile; fileRef = EFC86ECE21133BB40049CD8B /* topee-content.js */; };
+		EFEB89AF21A5565700264C8C /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB89AE21A5565700264C8C /* ProcessInfo.swift */; };
+		EFEB89B121A5586200264C8C /* ProcessInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB89B021A5586200264C8C /* ProcessInfoTests.swift */; };
+		EFEB89B321A55A5700264C8C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB89B221A55A5700264C8C /* String.swift */; };
+		FD4AD1CE2153E1F900E13EA0 /* run-at-document-end.sh in Resources */ = {isa = PBXBuildFile; fileRef = FD4AD1CC2153E1E400E13EA0 /* run-at-document-end.sh */; };
+		FDD7715921304F8500F6BC46 /* topee-iframe-resources.js in Resources */ = {isa = PBXBuildFile; fileRef = FDD7715821304F8500F6BC46 /* topee-iframe-resources.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF80A766210F2B68002C6F3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF80A752210F2B67002C6F3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF80A75A210F2B67002C6F3F;
+			remoteInfo = Topee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		806E5C6121306E4300C369EB /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		80BEB8A42111B3E600DA4C7B /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		80BEB8A62111B58900DA4C7B /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		80BEB8A92111B68600DA4C7B /* topee-background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "topee-background.js"; path = "Build/topee-background.js"; sourceTree = SOURCE_ROOT; };
+		EF1A65C821186D390021E013 /* url-matcher.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "url-matcher.js"; sourceTree = "<group>"; };
+		EF1FACD0211467FD005876A2 /* runtime.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runtime.js; sourceTree = "<group>"; };
+		EF1FACD1211467FD005876A2 /* tabs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tabs.js; sourceTree = "<group>"; };
+		EF1FACD2211467FD005876A2 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		EF26BBD82192DDA800C17448 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		EF2B6DE6216F8CAA003B4D7E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EF2B6DE8216F8CAA003B4D7E /* WKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		EF2B6DE9216F8CAA003B4D7E /* WKUserScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKUserScript.swift; sourceTree = "<group>"; };
+		EF2B6DEA216F8CAA003B4D7E /* SFSafariApplicationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSafariApplicationHelper.swift; sourceTree = "<group>"; };
+		EF2B6DEB216F8CAA003B4D7E /* PageRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageRegistry.swift; sourceTree = "<group>"; };
+		EF2B6DED216F8CAA003B4D7E /* TopeeExtensionManifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopeeExtensionManifest.swift; sourceTree = "<group>"; };
+		EF2B6DEE216F8CAA003B4D7E /* SafariExtensionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariExtensionBridge.swift; sourceTree = "<group>"; };
+		EF2B6DEF216F8CAA003B4D7E /* TopeeSafariExtensionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopeeSafariExtensionHandler.swift; sourceTree = "<group>"; };
+		EF2B6DF9216F911D003B4D7E /* TopeeLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopeeLogger.swift; sourceTree = "<group>"; };
+		EF40FAC02170DBE10083F822 /* DefaultLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLogger.swift; sourceTree = "<group>"; };
+		EF40FAC22170DDA80083F822 /* MessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
+		EF80A75B210F2B67002C6F3F /* Topee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Topee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80A75E210F2B67002C6F3F /* Topee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topee.h; sourceTree = "<group>"; };
+		EF80A75F210F2B67002C6F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF80A764210F2B68002C6F3F /* TopeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80A769210F2B68002C6F3F /* PageRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRegistryTests.swift; sourceTree = "<group>"; };
+		EF80A76B210F2B68002C6F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF80A77B210F2C37002C6F3F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EF80A77C210F2C37002C6F3F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EF80A77D210F2C37002C6F3F /* Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		EF80A77E210F2C37002C6F3F /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		EF83A0C4211479D7002C7AF1 /* event-bus.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "event-bus.js"; sourceTree = "<group>"; };
+		EFC86ECC21131A0B0049CD8B /* topee-background-end.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "topee-background-end.js"; sourceTree = "<group>"; };
+		EFC86ECE21133BB40049CD8B /* topee-content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "topee-content.js"; path = "Build/topee-content.js"; sourceTree = SOURCE_ROOT; };
+		EFEB89AE21A5565700264C8C /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
+		EFEB89B021A5586200264C8C /* ProcessInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoTests.swift; sourceTree = "<group>"; };
+		EFEB89B221A55A5700264C8C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EFF799C92110B0A100646663 /* runtime.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runtime.js; sourceTree = "<group>"; };
+		EFF799CA2110B0A100646663 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		EFF799CD2110B0A600646663 /* tabInfo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tabInfo.js; sourceTree = "<group>"; };
+		FD3468FB21465A2400A86D27 /* browser-action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-action.js"; sourceTree = "<group>"; };
+		FD3468FC21465A2400A86D27 /* context-menus.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "context-menus.js"; sourceTree = "<group>"; };
+		FD3468FD21465A2400A86D27 /* extension.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = extension.js; sourceTree = "<group>"; };
+		FD3468FE21465A2500A86D27 /* i18n.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = i18n.js; sourceTree = "<group>"; };
+		FD34690321465A4500A86D27 /* i18n.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = i18n.js; sourceTree = "<group>"; };
+		FD34690421465A4500A86D27 /* tabs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tabs.js; sourceTree = "<group>"; };
+		FD34690521465A4500A86D27 /* extension.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = extension.js; sourceTree = "<group>"; };
+		FD4AD1CC2153E1E400E13EA0 /* run-at-document-end.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-at-document-end.sh"; sourceTree = "<group>"; };
+		FD80BAF6211DA1E600CCFB1E /* iframe-resources.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "iframe-resources.js"; path = "Sources/JavaScript/IframeResources/iframe-resources.js"; sourceTree = SOURCE_ROOT; };
+		FDD7715821304F8500F6BC46 /* topee-iframe-resources.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "topee-iframe-resources.js"; path = "../Build/topee-iframe-resources.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF80A757210F2B67002C6F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A761210F2B68002C6F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80A765210F2B68002C6F3F /* Topee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80BEB8A32111B3E600DA4C7B /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				80BEB8A42111B3E600DA4C7B /* background.js */,
+				EF83A0C4211479D7002C7AF1 /* event-bus.js */,
+				EF1A65C821186D390021E013 /* url-matcher.js */,
+				EF1FACCF211467FD005876A2 /* chrome */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		80BEB8A82111B65700DA4C7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC86ECE21133BB40049CD8B /* topee-content.js */,
+				80BEB8A92111B68600DA4C7B /* topee-background.js */,
+				EFC86ECC21131A0B0049CD8B /* topee-background-end.js */,
+				FDD7715821304F8500F6BC46 /* topee-iframe-resources.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF1FACCF211467FD005876A2 /* chrome */ = {
+			isa = PBXGroup;
+			children = (
+				FD3468FB21465A2400A86D27 /* browser-action.js */,
+				FD3468FC21465A2400A86D27 /* context-menus.js */,
+				FD3468FD21465A2400A86D27 /* extension.js */,
+				FD3468FE21465A2500A86D27 /* i18n.js */,
+				EF1FACD0211467FD005876A2 /* runtime.js */,
+				EF1FACD1211467FD005876A2 /* tabs.js */,
+				EF1FACD2211467FD005876A2 /* index.js */,
+			);
+			path = chrome;
+			sourceTree = "<group>";
+		};
+		EF2B6DE4216F8CAA003B4D7E /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				EF40FAC02170DBE10083F822 /* DefaultLogger.swift */,
+				EF2B6DE6216F8CAA003B4D7E /* Message.swift */,
+				EF40FAC22170DDA80083F822 /* MessageHandler.swift */,
+				EF2B6DEB216F8CAA003B4D7E /* PageRegistry.swift */,
+				EF2B6DEA216F8CAA003B4D7E /* SFSafariApplicationHelper.swift */,
+				EF2B6DE7216F8CAA003B4D7E /* Extensions */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		EF2B6DE7216F8CAA003B4D7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF26BBD82192DDA800C17448 /* Bundle.swift */,
+				EFEB89AE21A5565700264C8C /* ProcessInfo.swift */,
+				EFEB89B221A55A5700264C8C /* String.swift */,
+				EF2B6DE9216F8CAA003B4D7E /* WKUserScript.swift */,
+				EF2B6DE8216F8CAA003B4D7E /* WKWebView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF2B6DEC216F8CAA003B4D7E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B6DEE216F8CAA003B4D7E /* SafariExtensionBridge.swift */,
+				EF2B6DED216F8CAA003B4D7E /* TopeeExtensionManifest.swift */,
+				EF2B6DF9216F911D003B4D7E /* TopeeLogger.swift */,
+				EF2B6DEF216F8CAA003B4D7E /* TopeeSafariExtensionHandler.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		EF80A751210F2B67002C6F3F = {
+			isa = PBXGroup;
+			children = (
+				FD4AD1CB2153E1E400E13EA0 /* Scripts */,
+				EF80A77A210F2C1E002C6F3F /* Config */,
+				EF80A75C210F2B67002C6F3F /* Products */,
+				80BEB8A82111B65700DA4C7B /* Resources */,
+				EF80A75D210F2B67002C6F3F /* Sources */,
+				EF80A775210F2BC3002C6F3F /* Support */,
+				EF80A768210F2B68002C6F3F /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		EF80A75C210F2B67002C6F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A75B210F2B67002C6F3F /* Topee.framework */,
+				EF80A764210F2B68002C6F3F /* TopeeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF80A75D210F2B67002C6F3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FD66CF7F211052B5003E0819 /* JavaScript */,
+				FD66CF7E211052AE003E0819 /* Swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EF80A768210F2B68002C6F3F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A769210F2B68002C6F3F /* PageRegistryTests.swift */,
+				EFEB89B021A5586200264C8C /* ProcessInfoTests.swift */,
+				806E5C6121306E4300C369EB /* TestHelper.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EF80A775210F2BC3002C6F3F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A779210F2C0F002C6F3F /* Tests */,
+				EF80A778210F2C07002C6F3F /* Sources */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EF80A778210F2C07002C6F3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A75E210F2B67002C6F3F /* Topee.h */,
+				EF80A75F210F2B67002C6F3F /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EF80A779210F2C0F002C6F3F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A76B210F2B68002C6F3F /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EF80A77A210F2C1E002C6F3F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A77E210F2C37002C6F3F /* Common.xcconfig */,
+				EF80A77B210F2C37002C6F3F /* Debug.xcconfig */,
+				EF80A77C210F2C37002C6F3F /* Release.xcconfig */,
+				EF80A77D210F2C37002C6F3F /* Tests.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EFF799C82110B0A100646663 /* chrome */ = {
+			isa = PBXGroup;
+			children = (
+				FD34690521465A4500A86D27 /* extension.js */,
+				FD34690321465A4500A86D27 /* i18n.js */,
+				FD34690421465A4500A86D27 /* tabs.js */,
+				EFF799C92110B0A100646663 /* runtime.js */,
+				EFF799CA2110B0A100646663 /* index.js */,
+			);
+			path = chrome;
+			sourceTree = "<group>";
+		};
+		FD4AD1CB2153E1E400E13EA0 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AD1CC2153E1E400E13EA0 /* run-at-document-end.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		FD66CF7E211052AE003E0819 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B6DE4216F8CAA003B4D7E /* Private */,
+				EF2B6DEC216F8CAA003B4D7E /* Public */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		FD66CF7F211052B5003E0819 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				FD80BAF5211DA1B000CCFB1E /* IframeResources */,
+				80BEB8A32111B3E600DA4C7B /* Background */,
+				FD66CF83211053D5003E0819 /* Content */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
+		FD66CF83211053D5003E0819 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				80BEB8A62111B58900DA4C7B /* content.js */,
+				EFF799CD2110B0A600646663 /* tabInfo.js */,
+				EFF799C82110B0A100646663 /* chrome */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		FD80BAF5211DA1B000CCFB1E /* IframeResources */ = {
+			isa = PBXGroup;
+			children = (
+				FD80BAF6211DA1E600CCFB1E /* iframe-resources.js */,
+			);
+			name = IframeResources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF80A758210F2B67002C6F3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80A76C210F2B68002C6F3F /* Topee.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF80A75A210F2B67002C6F3F /* Topee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80A76F210F2B68002C6F3F /* Build configuration list for PBXNativeTarget "Topee" */;
+			buildPhases = (
+				EF80A756210F2B67002C6F3F /* Sources */,
+				EF80A757210F2B67002C6F3F /* Frameworks */,
+				EF80A758210F2B67002C6F3F /* Headers */,
+				FD66CF80211052F0003E0819 /* Bundle Content Script */,
+				EF80A759210F2B67002C6F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Topee;
+			productName = Topee;
+			productReference = EF80A75B210F2B67002C6F3F /* Topee.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF80A763210F2B68002C6F3F /* TopeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80A772210F2B68002C6F3F /* Build configuration list for PBXNativeTarget "TopeeTests" */;
+			buildPhases = (
+				EF80A760210F2B68002C6F3F /* Sources */,
+				EF80A761210F2B68002C6F3F /* Frameworks */,
+				EF80A762210F2B68002C6F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF80A767210F2B68002C6F3F /* PBXTargetDependency */,
+			);
+			name = TopeeTests;
+			productName = TopeeTests;
+			productReference = EF80A764210F2B68002C6F3F /* TopeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF80A752210F2B67002C6F3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Avast;
+				TargetAttributes = {
+					EF80A75A210F2B67002C6F3F = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					EF80A763210F2B68002C6F3F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EF80A755210F2B67002C6F3F /* Build configuration list for PBXProject "Framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF80A751210F2B67002C6F3F;
+			productRefGroup = EF80A75C210F2B67002C6F3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF80A75A210F2B67002C6F3F /* Topee */,
+				EF80A763210F2B68002C6F3F /* TopeeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF80A759210F2B67002C6F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4AD1CE2153E1F900E13EA0 /* run-at-document-end.sh in Resources */,
+				FDD7715921304F8500F6BC46 /* topee-iframe-resources.js in Resources */,
+				EFC86ECF21133BB40049CD8B /* topee-content.js in Resources */,
+				EFC86ECD21131A0B0049CD8B /* topee-background-end.js in Resources */,
+				80BEB8AA2111B68600DA4C7B /* topee-background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A762210F2B68002C6F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD66CF80211052F0003E0819 /* Bundle Content Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle Content Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C \"$SRCROOT/Sources/JavaScript\" test build\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF80A756210F2B67002C6F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2B6DF6216F8CAA003B4D7E /* TopeeExtensionManifest.swift in Sources */,
+				EF26BBD92192DDA800C17448 /* Bundle.swift in Sources */,
+				EF2B6DF5216F8CAA003B4D7E /* PageRegistry.swift in Sources */,
+				EFEB89AF21A5565700264C8C /* ProcessInfo.swift in Sources */,
+				EF40FAC12170DBE10083F822 /* DefaultLogger.swift in Sources */,
+				EF2B6DF1216F8CAA003B4D7E /* Message.swift in Sources */,
+				EF2B6DF4216F8CAA003B4D7E /* SFSafariApplicationHelper.swift in Sources */,
+				EF2B6DFA216F911D003B4D7E /* TopeeLogger.swift in Sources */,
+				EF2B6DF2216F8CAA003B4D7E /* WKWebView.swift in Sources */,
+				806E5C6221306E4300C369EB /* TestHelper.swift in Sources */,
+				EF2B6DF7216F8CAA003B4D7E /* SafariExtensionBridge.swift in Sources */,
+				EF2B6DF3216F8CAA003B4D7E /* WKUserScript.swift in Sources */,
+				EFEB89B321A55A5700264C8C /* String.swift in Sources */,
+				EF40FAC32170DDA80083F822 /* MessageHandler.swift in Sources */,
+				EF2B6DF8216F8CAA003B4D7E /* TopeeSafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A760210F2B68002C6F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80A76A210F2B68002C6F3F /* PageRegistryTests.swift in Sources */,
+				EFEB89B121A5586200264C8C /* ProcessInfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF80A767210F2B68002C6F3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF80A75A210F2B67002C6F3F /* Topee */;
+			targetProxy = EF80A766210F2B68002C6F3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF80A76D210F2B68002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EF80A76E210F2B68002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EF80A770210F2B68002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A77B210F2C37002C6F3F /* Debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 6H4HRTU5E3;
+			};
+			name = Debug;
+		};
+		EF80A771210F2B68002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A77C210F2C37002C6F3F /* Release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				DEVELOPMENT_TEAM = 6H4HRTU5E3;
+			};
+			name = Release;
+		};
+		EF80A773210F2B68002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A77D210F2C37002C6F3F /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EF80A774210F2B68002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A77D210F2C37002C6F3F /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF80A755210F2B67002C6F3F /* Build configuration list for PBXProject "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A76D210F2B68002C6F3F /* Debug */,
+				EF80A76E210F2B68002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80A76F210F2B68002C6F3F /* Build configuration list for PBXNativeTarget "Topee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A770210F2B68002C6F3F /* Debug */,
+				EF80A771210F2B68002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80A772210F2B68002C6F3F /* Build configuration list for PBXNativeTarget "TopeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A773210F2B68002C6F3F /* Debug */,
+				EF80A774210F2B68002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF80A752210F2B67002C6F3F /* Project object */;
+}

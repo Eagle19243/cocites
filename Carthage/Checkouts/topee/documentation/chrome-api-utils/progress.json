@@ -1,0 +1,43 @@
+{
+  "done": {
+    "browserAction": [
+      "setIcon",
+      "setTitle",
+      "onClicked"
+    ],
+    "runtime": [
+      "getManifest",
+      "sendMessage",
+      "onMessage"
+    ],
+    "tabs": [
+      "get",
+      "sendMessage",
+      "onCreated",
+      "onUpdated"
+    ],
+    "i18n": [
+      "getUILanguage"
+    ],
+    "windows": [
+      "WINDOW_ID_CURRENT",
+      "WINDOW_ID_NONE"
+    ]
+  },
+  "partly": {
+    "tabs": [
+      "query",
+      "update",
+      "create",
+      "onActivated"
+    ],
+    "i18n": [
+      "getMessage"
+    ]
+  },
+  "bugs": {
+    "runtime": {
+      "sendMessage": []
+    }
+  }
+}

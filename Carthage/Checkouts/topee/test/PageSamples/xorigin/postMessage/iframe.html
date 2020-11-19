@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iframe</title>
+    <script src="_tabId.js"></script>
+</head>
+<body>
+    <h1>iframe</h1>
+    <p>top.tabId is <span id='tabId'>undefined</span></p>
+    <script>
+        topee.tabId.then(function (tabId) {
+            document.getElementById('tabId').textContent = tabId;
+        });
+    </script>
+</body>
+</html>
