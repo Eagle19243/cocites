@@ -13,14 +13,41 @@
 		840EB5B42565EC9E00ECCE85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5B22565EC9E00ECCE85 /* Main.storyboard */; };
 		840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5C22565ECCF00ECCE85 /* Cocoa.framework */; };
 		840EB5C62565ECCF00ECCE85 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */; };
-		840EB5CE2565ECCF00ECCE85 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5CD2565ECCF00ECCE85 /* script.js */; };
-		840EB5D02565ECCF00ECCE85 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */; };
 		840EB5D42565ECCF00ECCE85 /* CoCites Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; };
 		840EB5DB2565ED8700ECCE85 /* Topee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		840EB5DE2565EFC000ECCE85 /* CCApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DD2565EFC000ECCE85 /* CCApplication.swift */; };
 		840EB5E02565EFD800ECCE85 /* CCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DF2565EFD800ECCE85 /* CCConstants.swift */; };
 		840EB5E12565EFDD00ECCE85 /* CCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DF2565EFD800ECCE85 /* CCConstants.swift */; };
+		840EB6032565FF8200ECCE85 /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E32565FF8200ECCE85 /* bootstrap.min.css */; };
+		840EB6042565FF8200ECCE85 /* topee-content.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E42565FF8200ECCE85 /* topee-content.js */; };
+		840EB6052565FF8200ECCE85 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E52565FF8200ECCE85 /* styles.css */; };
+		840EB6062565FF8200ECCE85 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E62565FF8200ECCE85 /* background.js */; };
+		840EB6072565FF8200ECCE85 /* toolbar-icon-19.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E82565FF8200ECCE85 /* toolbar-icon-19.png */; };
+		840EB6082565FF8200ECCE85 /* toolbar-icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5E92565FF8200ECCE85 /* toolbar-icon-32.png */; };
+		840EB6092565FF8200ECCE85 /* icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5EA2565FF8200ECCE85 /* icon-256.png */; };
+		840EB60A2565FF8200ECCE85 /* 16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5EB2565FF8200ECCE85 /* 16x16.png */; };
+		840EB60B2565FF8200ECCE85 /* CoCitesLogoGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5EC2565FF8200ECCE85 /* CoCitesLogoGrey.png */; };
+		840EB60C2565FF8200ECCE85 /* icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5ED2565FF8200ECCE85 /* icon-48.png */; };
+		840EB60D2565FF8200ECCE85 /* CoCitesLogoLong.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5EE2565FF8200ECCE85 /* CoCitesLogoLong.png */; };
+		840EB60E2565FF8200ECCE85 /* icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5EF2565FF8200ECCE85 /* icon-64.png */; };
+		840EB60F2565FF8200ECCE85 /* icon-96.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F02565FF8200ECCE85 /* icon-96.png */; };
+		840EB6102565FF8200ECCE85 /* topee-iframe-resources.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F12565FF8200ECCE85 /* topee-iframe-resources.js */; };
+		840EB6112565FF8200ECCE85 /* 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F22565FF8200ECCE85 /* 128x128.png */; };
+		840EB6122565FF8200ECCE85 /* 48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F32565FF8200ECCE85 /* 48x48.png */; };
+		840EB6132565FF8200ECCE85 /* 247x65.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F42565FF8200ECCE85 /* 247x65.png */; };
+		840EB6142565FF8200ECCE85 /* 32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F52565FF8200ECCE85 /* 32x32.png */; };
+		840EB6152565FF8200ECCE85 /* toolbar-icon-38.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F62565FF8200ECCE85 /* toolbar-icon-38.png */; };
+		840EB6162565FF8200ECCE85 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F72565FF8200ECCE85 /* icon-128.png */; };
+		840EB6172565FF8200ECCE85 /* toolbar-icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F82565FF8200ECCE85 /* toolbar-icon-16.png */; };
+		840EB6182565FF8200ECCE85 /* 247x65with text.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F92565FF8200ECCE85 /* 247x65with text.png */; };
+		840EB6192565FF8200ECCE85 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FA2565FF8200ECCE85 /* icon-512.png */; };
+		840EB61A2565FF8200ECCE85 /* jquery-3.4.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */; };
+		840EB61B2565FF8200ECCE85 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5FC2565FF8200ECCE85 /* Topee.framework */; };
+		840EB61C2565FF8200ECCE85 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FD2565FF8200ECCE85 /* manifest.json */; };
+		840EB61D2565FF8200ECCE85 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */; };
+		840EB61E2565FF8200ECCE85 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 840EB6012565FF8200ECCE85 /* messages.json */; };
+		840EB61F2565FF8200ECCE85 /* contentScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB6022565FF8200ECCE85 /* contentScript.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +97,39 @@
 		840EB5C22565ECCF00ECCE85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		840EB5CC2565ECCF00ECCE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		840EB5CD2565ECCF00ECCE85 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		840EB5D12565ECCF00ECCE85 /* CoCites_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoCites_Extension.entitlements; sourceTree = "<group>"; };
 		840EB5D92565ED8700ECCE85 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Topee.framework; path = Carthage/Build/Mac/Topee.framework; sourceTree = "<group>"; };
 		840EB5DD2565EFC000ECCE85 /* CCApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCApplication.swift; sourceTree = "<group>"; };
 		840EB5DF2565EFD800ECCE85 /* CCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCConstants.swift; sourceTree = "<group>"; };
+		840EB5E32565FF8200ECCE85 /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
+		840EB5E42565FF8200ECCE85 /* topee-content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "topee-content.js"; sourceTree = "<group>"; };
+		840EB5E52565FF8200ECCE85 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		840EB5E62565FF8200ECCE85 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		840EB5E82565FF8200ECCE85 /* toolbar-icon-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-19.png"; sourceTree = "<group>"; };
+		840EB5E92565FF8200ECCE85 /* toolbar-icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-32.png"; sourceTree = "<group>"; };
+		840EB5EA2565FF8200ECCE85 /* icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-256.png"; sourceTree = "<group>"; };
+		840EB5EB2565FF8200ECCE85 /* 16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16x16.png; sourceTree = "<group>"; };
+		840EB5EC2565FF8200ECCE85 /* CoCitesLogoGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoCitesLogoGrey.png; sourceTree = "<group>"; };
+		840EB5ED2565FF8200ECCE85 /* icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-48.png"; sourceTree = "<group>"; };
+		840EB5EE2565FF8200ECCE85 /* CoCitesLogoLong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoCitesLogoLong.png; sourceTree = "<group>"; };
+		840EB5EF2565FF8200ECCE85 /* icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-64.png"; sourceTree = "<group>"; };
+		840EB5F02565FF8200ECCE85 /* icon-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-96.png"; sourceTree = "<group>"; };
+		840EB5F12565FF8200ECCE85 /* topee-iframe-resources.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "topee-iframe-resources.js"; sourceTree = "<group>"; };
+		840EB5F22565FF8200ECCE85 /* 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128x128.png; sourceTree = "<group>"; };
+		840EB5F32565FF8200ECCE85 /* 48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48x48.png; sourceTree = "<group>"; };
+		840EB5F42565FF8200ECCE85 /* 247x65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 247x65.png; sourceTree = "<group>"; };
+		840EB5F52565FF8200ECCE85 /* 32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32x32.png; sourceTree = "<group>"; };
+		840EB5F62565FF8200ECCE85 /* toolbar-icon-38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-38.png"; sourceTree = "<group>"; };
+		840EB5F72565FF8200ECCE85 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		840EB5F82565FF8200ECCE85 /* toolbar-icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-icon-16.png"; sourceTree = "<group>"; };
+		840EB5F92565FF8200ECCE85 /* 247x65with text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "247x65with text.png"; sourceTree = "<group>"; };
+		840EB5FA2565FF8200ECCE85 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
+		840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-3.4.1.min.js"; sourceTree = "<group>"; };
+		840EB5FC2565FF8200ECCE85 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Topee.framework; sourceTree = "<group>"; };
+		840EB5FD2565FF8200ECCE85 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		840EB6012565FF8200ECCE85 /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
+		840EB6022565FF8200ECCE85 /* contentScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = contentScript.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840EB61B2565FF8200ECCE85 /* Topee.framework in Frameworks */,
 				840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */,
 				840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */,
 			);
@@ -146,11 +201,70 @@
 			children = (
 				840EB5C52565ECCF00ECCE85 /* SafariExtensionHandler.swift */,
 				840EB5CC2565ECCF00ECCE85 /* Info.plist */,
-				840EB5CD2565ECCF00ECCE85 /* script.js */,
-				840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */,
 				840EB5D12565ECCF00ECCE85 /* CoCites_Extension.entitlements */,
+				840EB5E22565FF8200ECCE85 /* Resources */,
 			);
 			path = "CoCites Extension";
+			sourceTree = "<group>";
+		};
+		840EB5E22565FF8200ECCE85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5E32565FF8200ECCE85 /* bootstrap.min.css */,
+				840EB5E42565FF8200ECCE85 /* topee-content.js */,
+				840EB5E52565FF8200ECCE85 /* styles.css */,
+				840EB5E62565FF8200ECCE85 /* background.js */,
+				840EB5E72565FF8200ECCE85 /* images */,
+				840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */,
+				840EB5FC2565FF8200ECCE85 /* Topee.framework */,
+				840EB5FD2565FF8200ECCE85 /* manifest.json */,
+				840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */,
+				840EB5FF2565FF8200ECCE85 /* _locales */,
+				840EB6022565FF8200ECCE85 /* contentScript.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		840EB5E72565FF8200ECCE85 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				840EB5E82565FF8200ECCE85 /* toolbar-icon-19.png */,
+				840EB5E92565FF8200ECCE85 /* toolbar-icon-32.png */,
+				840EB5EA2565FF8200ECCE85 /* icon-256.png */,
+				840EB5EB2565FF8200ECCE85 /* 16x16.png */,
+				840EB5EC2565FF8200ECCE85 /* CoCitesLogoGrey.png */,
+				840EB5ED2565FF8200ECCE85 /* icon-48.png */,
+				840EB5EE2565FF8200ECCE85 /* CoCitesLogoLong.png */,
+				840EB5EF2565FF8200ECCE85 /* icon-64.png */,
+				840EB5F02565FF8200ECCE85 /* icon-96.png */,
+				840EB5F12565FF8200ECCE85 /* topee-iframe-resources.js */,
+				840EB5F22565FF8200ECCE85 /* 128x128.png */,
+				840EB5F32565FF8200ECCE85 /* 48x48.png */,
+				840EB5F42565FF8200ECCE85 /* 247x65.png */,
+				840EB5F52565FF8200ECCE85 /* 32x32.png */,
+				840EB5F62565FF8200ECCE85 /* toolbar-icon-38.png */,
+				840EB5F72565FF8200ECCE85 /* icon-128.png */,
+				840EB5F82565FF8200ECCE85 /* toolbar-icon-16.png */,
+				840EB5F92565FF8200ECCE85 /* 247x65with text.png */,
+				840EB5FA2565FF8200ECCE85 /* icon-512.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		840EB5FF2565FF8200ECCE85 /* _locales */ = {
+			isa = PBXGroup;
+			children = (
+				840EB6002565FF8200ECCE85 /* en */,
+			);
+			path = _locales;
+			sourceTree = "<group>";
+		};
+		840EB6002565FF8200ECCE85 /* en */ = {
+			isa = PBXGroup;
+			children = (
+				840EB6012565FF8200ECCE85 /* messages.json */,
+			);
+			path = en;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +357,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840EB5D02565ECCF00ECCE85 /* ToolbarItemIcon.pdf in Resources */,
-				840EB5CE2565ECCF00ECCE85 /* script.js in Resources */,
+				840EB6122565FF8200ECCE85 /* 48x48.png in Resources */,
+				840EB60D2565FF8200ECCE85 /* CoCitesLogoLong.png in Resources */,
+				840EB6132565FF8200ECCE85 /* 247x65.png in Resources */,
+				840EB6042565FF8200ECCE85 /* topee-content.js in Resources */,
+				840EB6162565FF8200ECCE85 /* icon-128.png in Resources */,
+				840EB60F2565FF8200ECCE85 /* icon-96.png in Resources */,
+				840EB6082565FF8200ECCE85 /* toolbar-icon-32.png in Resources */,
+				840EB6182565FF8200ECCE85 /* 247x65with text.png in Resources */,
+				840EB6092565FF8200ECCE85 /* icon-256.png in Resources */,
+				840EB6032565FF8200ECCE85 /* bootstrap.min.css in Resources */,
+				840EB60E2565FF8200ECCE85 /* icon-64.png in Resources */,
+				840EB6142565FF8200ECCE85 /* 32x32.png in Resources */,
+				840EB61C2565FF8200ECCE85 /* manifest.json in Resources */,
+				840EB6072565FF8200ECCE85 /* toolbar-icon-19.png in Resources */,
+				840EB61F2565FF8200ECCE85 /* contentScript.js in Resources */,
+				840EB6192565FF8200ECCE85 /* icon-512.png in Resources */,
+				840EB61E2565FF8200ECCE85 /* messages.json in Resources */,
+				840EB61A2565FF8200ECCE85 /* jquery-3.4.1.min.js in Resources */,
+				840EB6172565FF8200ECCE85 /* toolbar-icon-16.png in Resources */,
+				840EB6052565FF8200ECCE85 /* styles.css in Resources */,
+				840EB6102565FF8200ECCE85 /* topee-iframe-resources.js in Resources */,
+				840EB6062565FF8200ECCE85 /* background.js in Resources */,
+				840EB6152565FF8200ECCE85 /* toolbar-icon-38.png in Resources */,
+				840EB60C2565FF8200ECCE85 /* icon-48.png in Resources */,
+				840EB6112565FF8200ECCE85 /* 128x128.png in Resources */,
+				840EB60A2565FF8200ECCE85 /* 16x16.png in Resources */,
+				840EB61D2565FF8200ECCE85 /* ToolbarItemIcon.pdf in Resources */,
+				840EB60B2565FF8200ECCE85 /* CoCitesLogoGrey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +552,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.9;
@@ -434,6 +575,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.9;
@@ -461,6 +603,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/CoCites\\ Extension/Resources",
 				);
 				INFOPLIST_FILE = "CoCites Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +629,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/CoCites\\ Extension/Resources",
 				);
 				INFOPLIST_FILE = "CoCites Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
