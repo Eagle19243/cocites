@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840EB5AD2565EC9D00ECCE85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */; };
-		840EB5AF2565EC9D00ECCE85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AE2565EC9D00ECCE85 /* ViewController.swift */; };
+		840EB5AD2565EC9D00ECCE85 /* CCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AC2565EC9D00ECCE85 /* CCAppDelegate.swift */; };
+		840EB5AF2565EC9D00ECCE85 /* CCMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5AE2565EC9D00ECCE85 /* CCMainVC.swift */; };
 		840EB5B12565EC9E00ECCE85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5B02565EC9E00ECCE85 /* Assets.xcassets */; };
 		840EB5B42565EC9E00ECCE85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5B22565EC9E00ECCE85 /* Main.storyboard */; };
 		840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5C22565ECCF00ECCE85 /* Cocoa.framework */; };
@@ -18,6 +18,9 @@
 		840EB5D42565ECCF00ECCE85 /* CoCites Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 840EB5C02565ECCF00ECCE85 /* CoCites Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; };
 		840EB5DB2565ED8700ECCE85 /* Topee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5D92565ED8700ECCE85 /* Topee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		840EB5DE2565EFC000ECCE85 /* CCApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DD2565EFC000ECCE85 /* CCApplication.swift */; };
+		840EB5E02565EFD800ECCE85 /* CCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DF2565EFD800ECCE85 /* CCConstants.swift */; };
+		840EB5E12565EFDD00ECCE85 /* CCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840EB5DF2565EFD800ECCE85 /* CCConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,8 @@
 
 /* Begin PBXFileReference section */
 		840EB5A92565EC9D00ECCE85 /* CoCites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoCites.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840EB5AE2565EC9D00ECCE85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840EB5AC2565EC9D00ECCE85 /* CCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAppDelegate.swift; sourceTree = "<group>"; };
+		840EB5AE2565EC9D00ECCE85 /* CCMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMainVC.swift; sourceTree = "<group>"; };
 		840EB5B02565EC9E00ECCE85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840EB5B32565EC9E00ECCE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840EB5B52565EC9E00ECCE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 		840EB5CF2565ECCF00ECCE85 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		840EB5D12565ECCF00ECCE85 /* CoCites_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoCites_Extension.entitlements; sourceTree = "<group>"; };
 		840EB5D92565ED8700ECCE85 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Topee.framework; path = Carthage/Build/Mac/Topee.framework; sourceTree = "<group>"; };
+		840EB5DD2565EFC000ECCE85 /* CCApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCApplication.swift; sourceTree = "<group>"; };
+		840EB5DF2565EFD800ECCE85 /* CCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +120,10 @@
 		840EB5AB2565EC9D00ECCE85 /* CoCites */ = {
 			isa = PBXGroup;
 			children = (
-				840EB5AC2565EC9D00ECCE85 /* AppDelegate.swift */,
-				840EB5AE2565EC9D00ECCE85 /* ViewController.swift */,
+				840EB5DD2565EFC000ECCE85 /* CCApplication.swift */,
+				840EB5AC2565EC9D00ECCE85 /* CCAppDelegate.swift */,
+				840EB5AE2565EC9D00ECCE85 /* CCMainVC.swift */,
+				840EB5DF2565EFD800ECCE85 /* CCConstants.swift */,
 				840EB5B02565EC9E00ECCE85 /* Assets.xcassets */,
 				840EB5B22565EC9E00ECCE85 /* Main.storyboard */,
 				840EB5B52565EC9E00ECCE85 /* Info.plist */,
@@ -248,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840EB5AF2565EC9D00ECCE85 /* ViewController.swift in Sources */,
-				840EB5AD2565EC9D00ECCE85 /* AppDelegate.swift in Sources */,
+				840EB5AF2565EC9D00ECCE85 /* CCMainVC.swift in Sources */,
+				840EB5DE2565EFC000ECCE85 /* CCApplication.swift in Sources */,
+				840EB5AD2565EC9D00ECCE85 /* CCAppDelegate.swift in Sources */,
+				840EB5E02565EFD800ECCE85 /* CCConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840EB5C62565ECCF00ECCE85 /* SafariExtensionHandler.swift in Sources */,
+				840EB5E12565EFDD00ECCE85 /* CCConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +414,7 @@
 				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.9;
 				DEVELOPMENT_TEAM = 5B9DGTXRVS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoCites/Info.plist;
@@ -411,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCites;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCitesExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -425,6 +436,7 @@
 				CODE_SIGN_ENTITLEMENTS = CoCites/CoCites.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.9;
 				DEVELOPMENT_TEAM = 5B9DGTXRVS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoCites/Info.plist;
@@ -432,7 +444,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCites;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocites.CoCitesExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -443,6 +455,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "CoCites Extension/CoCites_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.9;
 				DEVELOPMENT_TEAM = 5B9DGTXRVS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -455,7 +468,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCites.CoCites-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCitesExt.CoCites-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,6 +480,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "CoCites Extension/CoCites_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.9;
 				DEVELOPMENT_TEAM = 5B9DGTXRVS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -479,7 +493,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCites.CoCites-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocites.CoCitesExt.CoCites-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

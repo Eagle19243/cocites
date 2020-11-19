@@ -2,7 +2,7 @@
 //  SafariExtensionHandler.swift
 //  CoCites Extension
 //
-//  Created by admin on 18.11.2020.
+//  Created by nag on 18.11.2020.
 //
 
 import SafariServices

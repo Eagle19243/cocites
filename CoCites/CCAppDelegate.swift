@@ -2,13 +2,13 @@
 //  AppDelegate.swift
 //  CoCites
 //
-//  Created by admin on 18.11.2020.
+//  Created by nag on 18.11.2020.
 //
 
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class CCAppDelegate: NSObject, NSApplicationDelegate {
 
 
 
