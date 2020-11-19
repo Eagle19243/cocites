@@ -43,7 +43,6 @@
 		840EB6182565FF8200ECCE85 /* 247x65with text.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5F92565FF8200ECCE85 /* 247x65with text.png */; };
 		840EB6192565FF8200ECCE85 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FA2565FF8200ECCE85 /* icon-512.png */; };
 		840EB61A2565FF8200ECCE85 /* jquery-3.4.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */; };
-		840EB61B2565FF8200ECCE85 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840EB5FC2565FF8200ECCE85 /* Topee.framework */; };
 		840EB61C2565FF8200ECCE85 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FD2565FF8200ECCE85 /* manifest.json */; };
 		840EB61D2565FF8200ECCE85 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */; };
 		840EB61E2565FF8200ECCE85 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 840EB6012565FF8200ECCE85 /* messages.json */; };
@@ -125,7 +124,6 @@
 		840EB5F92565FF8200ECCE85 /* 247x65with text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "247x65with text.png"; sourceTree = "<group>"; };
 		840EB5FA2565FF8200ECCE85 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
 		840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-3.4.1.min.js"; sourceTree = "<group>"; };
-		840EB5FC2565FF8200ECCE85 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Topee.framework; sourceTree = "<group>"; };
 		840EB5FD2565FF8200ECCE85 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		840EB6012565FF8200ECCE85 /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840EB61B2565FF8200ECCE85 /* Topee.framework in Frameworks */,
 				840EB5DA2565ED8700ECCE85 /* Topee.framework in Frameworks */,
 				840EB5C32565ECCF00ECCE85 /* Cocoa.framework in Frameworks */,
 			);
@@ -210,17 +207,16 @@
 		840EB5E22565FF8200ECCE85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				840EB5E32565FF8200ECCE85 /* bootstrap.min.css */,
-				840EB5E42565FF8200ECCE85 /* topee-content.js */,
-				840EB5E52565FF8200ECCE85 /* styles.css */,
-				840EB5E62565FF8200ECCE85 /* background.js */,
+				840EB5FF2565FF8200ECCE85 /* _locales */,
 				840EB5E72565FF8200ECCE85 /* images */,
+				840EB5E32565FF8200ECCE85 /* bootstrap.min.css */,
+				840EB5E52565FF8200ECCE85 /* styles.css */,
+				840EB5E42565FF8200ECCE85 /* topee-content.js */,
+				840EB6022565FF8200ECCE85 /* contentScript.js */,
+				840EB5E62565FF8200ECCE85 /* background.js */,
 				840EB5FB2565FF8200ECCE85 /* jquery-3.4.1.min.js */,
-				840EB5FC2565FF8200ECCE85 /* Topee.framework */,
 				840EB5FD2565FF8200ECCE85 /* manifest.json */,
 				840EB5FE2565FF8200ECCE85 /* ToolbarItemIcon.pdf */,
-				840EB5FF2565FF8200ECCE85 /* _locales */,
-				840EB6022565FF8200ECCE85 /* contentScript.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
