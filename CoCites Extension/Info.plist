@@ -31,14 +31,107 @@
 		<key>SFSafariContentScript</key>
 		<array>
 			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>https://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>https://scholar.google.com/*</string>
+					<string>https://scholar.google.fr/*</string>
+					<string>https://scholar.google.nl/*</string>
+					<string>https://scholar.google.es/*</string>
+					<string>https://scholar.google.ca/*</string>
+					<string>https://scholar.google.de/*</string>
+					<string>https://scholar.google.it/*</string>
+					<string>https://scholar.google.jp/*</string>
+					<string>https://scholar.google.no/*</string>
+					<string>https://scholar.google.pt/*</string>
+					<string>https://scholar.google.ru/*</string>
+					<string>https://*.proxy.library.emory.edu/*</string>
+					<string>http://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>http://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>http://scholar.google.com/*</string>
+					<string>http://scholar.google.fr/*</string>
+					<string>http://scholar.google.nl/*</string>
+					<string>http://scholar.google.es/*</string>
+					<string>http://scholar.google.ca/*</string>
+					<string>http://scholar.google.de/*</string>
+					<string>http://scholar.google.it/*</string>
+					<string>http://scholar.google.jp/*</string>
+					<string>http://scholar.google.no/*</string>
+					<string>http://scholar.google.pt/*</string>
+					<string>http://scholar.google.ru/*</string>
+					<string>http://*.proxy.library.emory.edu/*</string>
+				</array>
 				<key>Script</key>
 				<string>topee-content.js</string>
 			</dict>
 			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>https://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>https://scholar.google.com/*</string>
+					<string>https://scholar.google.fr/*</string>
+					<string>https://scholar.google.nl/*</string>
+					<string>https://scholar.google.es/*</string>
+					<string>https://scholar.google.ca/*</string>
+					<string>https://scholar.google.de/*</string>
+					<string>https://scholar.google.it/*</string>
+					<string>https://scholar.google.jp/*</string>
+					<string>https://scholar.google.no/*</string>
+					<string>https://scholar.google.pt/*</string>
+					<string>https://scholar.google.ru/*</string>
+					<string>https://*.proxy.library.emory.edu/*</string>
+					<string>http://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>http://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>http://scholar.google.com/*</string>
+					<string>http://scholar.google.fr/*</string>
+					<string>http://scholar.google.nl/*</string>
+					<string>http://scholar.google.es/*</string>
+					<string>http://scholar.google.ca/*</string>
+					<string>http://scholar.google.de/*</string>
+					<string>http://scholar.google.it/*</string>
+					<string>http://scholar.google.jp/*</string>
+					<string>http://scholar.google.no/*</string>
+					<string>http://scholar.google.pt/*</string>
+					<string>http://scholar.google.ru/*</string>
+					<string>http://*.proxy.library.emory.edu/*</string>
+				</array>
 				<key>Script</key>
 				<string>jquery-3.4.1.min.js</string>
 			</dict>
 			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>https://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>https://scholar.google.com/*</string>
+					<string>https://scholar.google.fr/*</string>
+					<string>https://scholar.google.nl/*</string>
+					<string>https://scholar.google.es/*</string>
+					<string>https://scholar.google.ca/*</string>
+					<string>https://scholar.google.de/*</string>
+					<string>https://scholar.google.it/*</string>
+					<string>https://scholar.google.jp/*</string>
+					<string>https://scholar.google.no/*</string>
+					<string>https://scholar.google.pt/*</string>
+					<string>https://scholar.google.ru/*</string>
+					<string>https://*.proxy.library.emory.edu/*</string>
+					<string>http://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>http://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>http://scholar.google.com/*</string>
+					<string>http://scholar.google.fr/*</string>
+					<string>http://scholar.google.nl/*</string>
+					<string>http://scholar.google.es/*</string>
+					<string>http://scholar.google.ca/*</string>
+					<string>http://scholar.google.de/*</string>
+					<string>http://scholar.google.it/*</string>
+					<string>http://scholar.google.jp/*</string>
+					<string>http://scholar.google.no/*</string>
+					<string>http://scholar.google.pt/*</string>
+					<string>http://scholar.google.ru/*</string>
+					<string>http://*.proxy.library.emory.edu/*</string>
+				</array>
 				<key>Script</key>
 				<string>contentScript.js</string>
 			</dict>
@@ -46,10 +139,72 @@
 		<key>SFSafariStyleSheet</key>
 		<array>
 			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>https://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>https://scholar.google.com/*</string>
+					<string>https://scholar.google.fr/*</string>
+					<string>https://scholar.google.nl/*</string>
+					<string>https://scholar.google.es/*</string>
+					<string>https://scholar.google.ca/*</string>
+					<string>https://scholar.google.de/*</string>
+					<string>https://scholar.google.it/*</string>
+					<string>https://scholar.google.jp/*</string>
+					<string>https://scholar.google.no/*</string>
+					<string>https://scholar.google.pt/*</string>
+					<string>https://scholar.google.ru/*</string>
+					<string>https://*.proxy.library.emory.edu/*</string>
+					<string>http://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>http://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>http://scholar.google.com/*</string>
+					<string>http://scholar.google.fr/*</string>
+					<string>http://scholar.google.nl/*</string>
+					<string>http://scholar.google.es/*</string>
+					<string>http://scholar.google.ca/*</string>
+					<string>http://scholar.google.de/*</string>
+					<string>http://scholar.google.it/*</string>
+					<string>http://scholar.google.jp/*</string>
+					<string>http://scholar.google.no/*</string>
+					<string>http://scholar.google.pt/*</string>
+					<string>http://scholar.google.ru/*</string>
+					<string>http://*.proxy.library.emory.edu/*</string>
+				</array>
 				<key>Style Sheet</key>
 				<string>bootstrap.min.css</string>
 			</dict>
 			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>https://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>https://scholar.google.com/*</string>
+					<string>https://scholar.google.fr/*</string>
+					<string>https://scholar.google.nl/*</string>
+					<string>https://scholar.google.es/*</string>
+					<string>https://scholar.google.ca/*</string>
+					<string>https://scholar.google.de/*</string>
+					<string>https://scholar.google.it/*</string>
+					<string>https://scholar.google.jp/*</string>
+					<string>https://scholar.google.no/*</string>
+					<string>https://scholar.google.pt/*</string>
+					<string>https://scholar.google.ru/*</string>
+					<string>https://*.proxy.library.emory.edu/*</string>
+					<string>http://*.ncbi.nlm.nih.gov/pubmed*</string>
+					<string>http://pubmed.ncbi.nlm.nih.gov/*</string>
+					<string>http://scholar.google.com/*</string>
+					<string>http://scholar.google.fr/*</string>
+					<string>http://scholar.google.nl/*</string>
+					<string>http://scholar.google.es/*</string>
+					<string>http://scholar.google.ca/*</string>
+					<string>http://scholar.google.de/*</string>
+					<string>http://scholar.google.it/*</string>
+					<string>http://scholar.google.jp/*</string>
+					<string>http://scholar.google.no/*</string>
+					<string>http://scholar.google.pt/*</string>
+					<string>http://scholar.google.ru/*</string>
+					<string>http://*.proxy.library.emory.edu/*</string>
+				</array>
 				<key>Style Sheet</key>
 				<string>styles.css</string>
 			</dict>
